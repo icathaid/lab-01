@@ -1,4 +1,4 @@
-![CF](http://i.imgur.com/7v5ASc8.png) 01: Node Ecosystem
+[![Build Status](https://www.travis-ci.com/icathaid/lab-01.svg?branch=master)](https://www.travis-ci.com/icathaid/lab-01)
 ========================================================
 
 ## Implementation
@@ -11,8 +11,8 @@
 
 #### Write Arithmetic Module Tests
 [] Use the faker module to randomize input
-[] Test each method for proper use (invoked with number arguments)
-[] Test each method for improper use (invoked with one or more non-number arguments)
+[x] Test each method for proper use (invoked with number arguments)
+[x] Test each method for improper use (invoked with one or more non-number arguments)
 
 #### Add features to the arithmetic module
 [] Add support for multiply and divide (be careful to not divide by zero!)
