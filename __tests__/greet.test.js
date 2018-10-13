@@ -6,9 +6,6 @@ const faker = require('faker');
 
 
 describe('greet module', () => {
-  // it('should say hello friend', () => {
-  //   expect(greet()).toEqual('hello friend');
-  // });
 
   it('should say hello and add whatever name is given', () => {
     expect(greet('bill')).toEqual('hello bill');
@@ -23,7 +20,6 @@ describe('greet module', () => {
 
   it('should work with faked input', () => {
     let name = faker.fake('{{name.firstName}}');
-    console.log('name      ', name);
     expect(greet(name)).toEqual('hello ' + name);
   });
 
