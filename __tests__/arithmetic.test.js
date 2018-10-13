@@ -1,6 +1,7 @@
 'use strict';
 
 const arithmetic = require('../lib/arithmetic.js');
+const faker = require('faker');
 
 describe('arithmetic module', () => {
   //  check validity of add inputs
@@ -12,6 +13,9 @@ describe('arithmetic module', () => {
   });
   it('should return null if given undefined', () => {
     expect(arithmetic.add(3, undefined)).toBe(null);
+  });
+  it('should return null if given NaN', () => {
+    expect(arithmetic.add(3, NaN)).toBe(null);
   });
   it('should ignore more than two inputs', () => {
     expect(arithmetic.add(1,1,9)).toEqual(2);
@@ -40,5 +44,9 @@ describe('arithmetic module', () => {
   it('should subtract two numbers correctly', () => {
     expect(arithmetic.subtract(6,4)).toEqual(2);
   });
-
+  it('should add two random numbers correctly', () => {
+    let a = parseInt(faker.fake('{{random.number}}'));
+    console.log(a);
+    expect(a + 1).toBeGreaterThan(1);
+  });
 });
