@@ -13,7 +13,7 @@
 ### Arithmetic Module
 
 #### Write Arithmetic Module Tests
-[] Use the faker module to randomize input
+[x] Use the faker module to randomize input
 
 [x] Test each method for proper use (invoked with number arguments)
 
@@ -31,16 +31,24 @@
 
 
 ### Greet Module
-Create a NodeJS module in the `lib` directory named `greet.js`.  This module should export a single function.
-[] The `greet` function should have a single parameter (arity of one) that should expect a string as it's input
-[] The `greet` function should return the input name, concatenated with "hello ": eg. ("hello susan")
-[] The `greet` function should return `null` if the input is not a string
+[x]  Create a NodeJS module in the `lib` directory named `greet.js`.  This module should export a single function.
+
+[x]  The `greet` function should have a single parameter (arity of one) that should expect a string as it's input
+  []  how to test for this?
+[x]  The `greet` function should return the input name, concatenated with "hello ": eg. ("hello susan")
+
+[x]  The `greet` function should return `null` if the input is not a string
+
 
 #### Greet Module Tests
-[] Use the faker module to randomize input
-[] Write a test that expects the greet module to return `null` when you supply non-string values
-[] Write a test the expects the greet module to return `'hello world'`
-  [] This should happen when invoked with `'world'` as the first argument
+[x] Use the faker module to randomize input
+
+[x] Write a test that expects the greet module to return `null` when you supply non-string values
+
+[x] Write a test the expects the greet module to return `'hello world'`
+
+  [x] This should happen when invoked with `'world'` as the first argument
+
 
 
 ### Documentation
