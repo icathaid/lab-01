@@ -3,8 +3,31 @@
 
 # Notes
 
-### Documentation
-[]  In your README.md file, describe the exported values of each module defined in your `lib` directory. Every function description should include it's airty (expected number of parameters), the expected data for each parameter (data-type and limitations), and the expected output behavior (for both valid and invalid use). Feel free to include any additional information that you would like.
+
+Greet Module:
+
+- Exports an anonymous function with a pairty of 1
+-   takes a string as an input
+-   checks for input validity ( must be string )
+- Returns 'hello ' and the input string
+
+
+Arithmetic Module:
+
+- Exports `I don't know how to describe this type of function` with a pairty of two
+-   takes two integers as inputs
+-   checks for input validity ( must be string )
+- Has four methods:
+  - add() returns the sum of the inputs
+  - subtract() returns the difference of the two inputs
+  - multiply() returns the product of the two inputs
+  - divide() returns the quotient of the two inputs
+
+
+app can be launched and will log out sample data with `node index.js` from the CLI.
+
+test suite can be run with `npm test` from the CLI.
+
 
 
 ## Implementation
@@ -56,5 +79,5 @@
 
   [x] This should happen when invoked with `'world'` as the first argument
 
-
-
+### Documentation
+[x]  In your README.md file, describe the exported values of each module defined in your `lib` directory. Every function description should include it's airty (expected number of parameters), the expected data for each parameter (data-type and limitations), and the expected output behavior (for both valid and invalid use). Feel free to include any additional information that you would like.
