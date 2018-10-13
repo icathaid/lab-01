@@ -1,10 +1,18 @@
 {
   "name": "01-node-ecosystem",
-  "version": "0.0.1",
-  "description": "this will be sooooo cool",
+  "version": "2.0.0",
+  "description": "greet and arithmetic modules",
   "main": "index.js",
-  "scripts": {},
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "test": "jest --coverage --verbose"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "faker": "^4.1.0"
+  }
 }
