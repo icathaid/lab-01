@@ -44,9 +44,16 @@ describe('arithmetic module', () => {
   it('should subtract two numbers correctly', () => {
     expect(arithmetic.subtract(6,4)).toEqual(2);
   });
+  // i'm not really sure how to test for equality with numbers I won't know in advance.
+  // if the expect and return both pull fresh random numbers, their sums will (almost) never equal each other
+  // this is the best I could come up with, but i'm not sure if `expect(a + b).toEqual(a + b);` is actually testing anything.
   it('should add two random numbers correctly', () => {
     let a = parseInt(faker.fake('{{random.number}}'));
-    console.log(a);
+    let b = parseInt(faker.fake('{{random.number}}'));
+    expect(a + b).toEqual(a + b);
+  });
+  it('should add two random numbers correctly', () => {
+    let a = parseInt(faker.fake('{{random.number}}'));
     expect(a + 1).toBeGreaterThan(1);
   });
 });
