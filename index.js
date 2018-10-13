@@ -4,6 +4,6 @@ const greet = require('./lib/greet.js');
 const math = require('./lib/arithmetic.js');
 
 
-console.log(greet('JOHN'));
-console.log(math.add(1,3)); // 4
-console.log(math.subtract(1,3)); // -2
+console.log(greet('friend'));  // hello friend
+console.log(math.add(4,6)); // 10
+console.log(math.subtract(15,3)); // 12

@@ -1,14 +1,20 @@
 [![Build Status](https://www.travis-ci.com/icathaid/lab-01.svg?branch=master)](https://www.travis-ci.com/icathaid/lab-01)
 ========================================================
 
+# Notes
+
+### Documentation
+[]  In your README.md file, describe the exported values of each module defined in your `lib` directory. Every function description should include it's airty (expected number of parameters), the expected data for each parameter (data-type and limitations), and the expected output behavior (for both valid and invalid use). Feel free to include any additional information that you would like.
+
+
 ## Implementation
 [x] Setup the package.json file to run lint checks and tests against the greet and arithmetic modules
 
 [x] Create a file called `index.js` that requires both the greet and arithmetic modules.
 
-[] Use this file to "greet" and perform math operations using the imported functions from the 2 modules
+[x] Use this file to "greet" and perform math operations using the imported functions from the 2 modules
 
-[] `console.log()` the return values
+[x] `console.log()` the return values
 
 ### Arithmetic Module
 
@@ -20,12 +26,13 @@
 [x] Test each method for improper use (invoked with one or more non-number arguments)
 
 #### Add features to the arithmetic module
-[] Add support for multiply and divide (be careful to not divide by zero!)
+[x] Add support for multiply and divide (be careful to not divide by zero!)
 
-[] Refactor the add, subtract, multiply to allow for an array of params so that you can do deeper calculations
+[x] Refactor the add, subtract, multiply to allow for an array of params so that you can do deeper calculations
 
 #### Refactor the arithmetic module
-[] DRY the code by externalizing any type checking or argument validation from your methods
+[x] DRY the code by externalizing any type checking or argument validation from your methods
+  There is a lot of repeated code in the input validation of the arithmetic tests.  There is probably a way to make it iterate through each method and perform the same tests (3/4 of them are identical) but it's beyond what I'll have time for.
 
 ---
 
@@ -51,5 +58,3 @@
 
 
 
-### Documentation
-[]  In your README.md file, describe the exported values of each module defined in your `lib` directory. Every function description should include it's airty (expected number of parameters), the expected data for each parameter (data-type and limitations), and the expected output behavior (for both valid and invalid use). Feel free to include any additional information that you would like.
