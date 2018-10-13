@@ -3,19 +3,25 @@
 
 ## Implementation
 [x] Setup the package.json file to run lint checks and tests against the greet and arithmetic modules
+
 [x] Create a file called `index.js` that requires both the greet and arithmetic modules.
+
 [] Use this file to "greet" and perform math operations using the imported functions from the 2 modules
+
 [] `console.log()` the return values
 
 ### Arithmetic Module
 
 #### Write Arithmetic Module Tests
 [] Use the faker module to randomize input
+
 [x] Test each method for proper use (invoked with number arguments)
+
 [x] Test each method for improper use (invoked with one or more non-number arguments)
 
 #### Add features to the arithmetic module
 [] Add support for multiply and divide (be careful to not divide by zero!)
+
 [] Refactor the add, subtract, multiply to allow for an array of params so that you can do deeper calculations
 
 #### Refactor the arithmetic module
